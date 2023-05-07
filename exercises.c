@@ -148,37 +148,37 @@
 
 // Solution
 
-int main()
-{
-    int n;
-    printf("Input the number of elements to be stored in the array :");
-    scanf("%d", &n);
+// int main()
+// {
+//     int n;
+//     printf("Input the number of elements to be stored in the array :");
+//     scanf("%d", &n);
 
-    int arr[n];
-    printf("Input %d elements in the array :\n", n);
-    for (int i = 0; i < n; i++)
-    {
-        printf("element - %d : ", i);
-        scanf("%d", &arr[i]);
-    }
-    int min = arr[0];
-    int minCount = 0;
-    for (int i = 0; i < n; i++)
-    {
-        int count = 0;
-        for (int j = 0; j < n; j++)
-        {
-            if (arr[i] == arr[j])
-            {
-                count++;
-            }
-        }
-        if (count < minCount)
-        {
-            minCount = count;
-            min = arr[i];
-        }
-    }
-    printf("The number that appears the least number of times is : %d\n", min);
-    return 0;
-}
+//     int arr[n];
+//     printf("Input %d elements in the array :\n", n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("element - %d : ", i);
+//         scanf("%d", &arr[i]);
+//     }
+//     int min = arr[0];
+//     int minCount = 0;
+//     for (int i = 0; i < n; i++)
+//     {
+//         int count = 0;
+//         for (int j = 0; j < n; j++)
+//         {
+//             if (arr[i] == arr[j])
+//             {
+//                 count++;
+//             }
+//         }
+//         if (count < minCount)
+//         {
+//             minCount = count;
+//             min = arr[i];
+//         }
+//     }
+//     printf("The number that appears the least number of times is : %d\n", min);
+//     return 0;
+// }

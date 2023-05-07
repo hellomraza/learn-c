@@ -397,16 +397,28 @@
 //  C Enumerations Example
 //  The following example shows how to define and use an enumeration in C.
 
-enum Level
-{
-    BEGINNER = 10,     // default value is 0 if not specified and increments by 1 for each value after that
-    INTERMEDIATE = 20, // if we specify a value, the next value will increment by 1 from that value
-    EXPERT = 30
-};
+// enum Level
+// {
+//     BEGINNER = 10,     // default value is 0 if not specified and increments by 1 for each value after that
+//     INTERMEDIATE = 20, // if we specify a value, the next value will increment by 1 from that value
+//     EXPERT = 30
+// };
 
-int main()
+// int main()
+// {
+//     enum Level myLevel = EXPERT;
+//     printf("%d", myLevel);
+//     return 0;˜
+// }
+
+int main() 
 {
-    enum Level myLevel = EXPERT;
-    printf("%d", myLevel);
+    int i = 1;
+
+    do 
+    {
+        printf("%d", i);
+    } while (i <= 0 )
+
     return 0;
 }
